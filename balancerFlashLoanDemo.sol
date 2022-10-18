@@ -30,6 +30,8 @@ contract myFlashloan {
         bytes memory data
     ) external {
         //借錢後要做的動作。
+        
+        //還錢
         IERC20(tokens[0]).transfer(msg.sender, amounts[0]+feeAmounts[0]); 
     }
 }
